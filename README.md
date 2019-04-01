@@ -1,5 +1,7 @@
 # Postman Collections
 
+A community generated list of Postman Collection
+
 Site available at : [https://nervous-torvalds-400a98.netlify.com/](https://nervous-torvalds-400a98.netlify.com/)
 
 ## How to use
