@@ -3,6 +3,10 @@
     {
       "name": "Trello",
       "file": "Trello.postman_collection.json"
+    },
+    {
+      "name": "Gitlab",
+      "file": "Gitlab.postman_collection.json"
     }
   ]
 }

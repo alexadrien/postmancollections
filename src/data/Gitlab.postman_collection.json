@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "d680e0a6-0ff4-4297-80fc-2803c8d9846b",
+		"name": "Gitlab",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Merge Requests",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Private-Token",
+						"value": "{{private_token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{gitlab_url}}/api/v4/projects/259/merge_requests?state=opened",
+					"host": [
+						"{{gitlab_url}}"
+					],
+					"path": [
+						"api",
+						"v4",
+						"projects",
+						"259",
+						"merge_requests"
+					],
+					"query": [
+						{
+							"key": "state",
+							"value": "opened"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Merge Requests {id}",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Private-Token",
+						"value": "{{private_token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{gitlab_url}}/api/v4/projects/259/merge_requests/424",
+					"host": [
+						"{{gitlab_url}}"
+					],
+					"path": [
+						"api",
+						"v4",
+						"projects",
+						"259",
+						"merge_requests",
+						"424"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "pipeline {id}",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Private-Token",
+						"type": "text",
+						"value": "{{private_token}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{gitlab_url}}/api/v4/projects/259/pipelines/46325",
+					"host": [
+						"{{gitlab_url}}"
+					],
+					"path": [
+						"api",
+						"v4",
+						"projects",
+						"259",
+						"pipelines",
+						"46325"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Trigger pipeline",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Private-Token",
+						"value": "{{private_token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{gitlab_url}}/api/v4/projects/259/trigger/pipeline?ref=master",
+					"host": [
+						"{{gitlab_url}}"
+					],
+					"path": [
+						"api",
+						"v4",
+						"projects",
+						"259",
+						"trigger",
+						"pipeline"
+					],
+					"query": [
+						{
+							"key": "ref",
+							"value": "master"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
