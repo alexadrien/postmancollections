@@ -19,7 +19,9 @@ class App extends Component {
             <Text variant="h6" color="inherit" grow>
               Postman Collections
             </Text>
-            <Button color="inherit"><AddIcon /></Button>
+            <Button color="inherit">
+              <AddIcon />
+            </Button>
           </Toolbar>
         </AppBar>
       </div>
