@@ -17,7 +17,7 @@ class App extends Component {
               <MenuIcon />
             </IconButton>
             <Text variant="h6" color="inherit" grow>
-              News
+              Postman Collections
             </Text>
             <Button color="inherit"><AddIcon /></Button>
           </Toolbar>
