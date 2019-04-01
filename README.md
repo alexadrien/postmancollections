@@ -21,7 +21,7 @@ Site available at : [https://nervous-torvalds-400a98.netlify.com/](https://nervo
 1. Create a collection on the Postman App
 2. Export it as JSON file
 
-![Export Collection](images/export_collection.png)
+![Export Collection](images/export_collection.png | width=100)
 
 4. Create a new file in `src/data/` ([please follow this link to import a new collection](https://github.com/alexadrien/postmancollections/new/master/src/data))
 5. Select "Create a new branch for this commit and start a pull request"
