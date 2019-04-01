@@ -11,7 +11,7 @@ import ListItemText from "@material-ui/core/ListItemText";
 
 class App extends Component {
   handleCollectionClick = collection => () => {
-    window.location  = `https://raw.githubusercontent.com/alexadrien/postmancollections/master/data/${collection.file}`;
+    window.location  = `https://raw.githubusercontent.com/alexadrien/postmancollections/master/src/data/${collection.file}`;
   };
 
   render() {
